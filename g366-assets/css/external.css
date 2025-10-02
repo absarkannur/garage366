@@ -123,7 +123,7 @@
 
 .inner-banner .header-wrap {
     position: relative;
-    height: 100px;
+    /* height: 100px; */
     width: 70%;
     text-align: center;
     z-index: 9;
@@ -178,7 +178,200 @@
     display: none;
 }
 
+.inner-contact-section .services-short_head h1,
+.inner-contact-section .services-short_head h2 {
+    color: #000;
+    font-size: 36px;
+}
 
+.inner-contact-section .services-short_head ul {
+    list-style: none;
+}
+
+.inner-contact-section .services-short_head li {
+    float: left;
+    padding-right: 40px;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.inner-contact-section .services-short_head li::after {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: #fded3d;
+    border-radius: 100%;
+    /* top: 0; */
+    bottom: 13px;
+    margin: auto;
+    right: 15px;
+}
+
+.inner-contact-section .services-short_head li:last-child::after {
+    display: none;
+}
+
+/* Awards */
+
+.inner-contact-section.awards .banner-award {
+    height: 300px;
+    background-image: url('./../images/award-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.inner-contact-section.awards .banner-award .imagethmb_inner {
+    height: 300px;
+}
+
+.inner-contact-section.awards .casestudies-block {
+    height: 250px;
+    width: 100%;
+    background-color: #999;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.inner-contact-section.awards .award-wrapper {
+    clear: both;
+}
+
+.inner-contact-section.awards .award-wrapper .selection-wrapper {
+    background-color: #fff;
+}
+
+.inner-contact-section.awards .award-wrapper .selection-wrapper:nth-child(odd) {
+    background-color: #F5F5F7;
+}
+
+.awards-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.awards-list .award-block {
+    /* flex-grow: 1; */
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.awards-list .award-block .award-img {
+    height: 250px;
+}
+
+.awards-list .award-block .award-img .imagethmb_inner {
+    height: 250px;
+}
+
+.awards-list .award-block .award-content {
+    clear: both;
+    text-align: left;
+}
+
+.awards-list .award-block .award-content h4.title {
+    font-size: 16px;
+    margin: 0;
+}
+
+.awards-list .award-block .award-content .sub-title {
+    display: block;
+    font-size: 14px;
+    color: #565A7A;
+    height: 40px;
+    line-height: 40px;
+}
+
+.awards-list .award-block .award-content .year {
+    background-color: #fff;
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+
+.awards-list .award-block .award-content .year.gold {
+    background-color: #D3AF37;
+}
+
+.awards-list .award-block .award-content .year.silver {
+    background-color: #C4C4C4;
+}
+
+.awards-list .award-block .award-content .year.bronze {
+    background-color: #CE8946;
+}
+
+.awards-list .award-block .seperate {
+    display: block;
+    width: 70%;
+    height: 2px;
+    border-radius: 30px;
+    background-color: #d1d1d1;
+    margin: 20px auto;
+}
+
+/* Clients */
+
+.clients-wrapper {
+    clear: both;
+}
+
+.clients-wrapper .clients {
+    clear: both;
+}
+
+.clients-wrapper .clients .item {
+    position: relative;
+    border-right: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    width: 25%;
+    height: 150px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: -1px;
+    margin-left: -1px;
+}
+
+.clients-wrapper .clients .item .img-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-wrapper .clients .item img {
+    height: 100%;
+}
+
+/* .clients-wrapper .clients .item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #DDD;
+} */
+
+.clients-wrapper .clients .item:nth-child(4n+1) {
+    border-right: none;
+}
+
+.clients-wrapper .clients .item:nth-child(-n + 5) {
+    border-top: none;
+}
+
+/* -------------- */
 
 footer {
     background-color: #000;
@@ -255,8 +448,8 @@ footer .footer-list .list.header {
 .tip__tap * {
     margin: 0;
     padding: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+    /* word-wrap: break-word; */
 }
 
 .tip__tap h1,
@@ -265,16 +458,16 @@ footer .footer-list .list.header {
 .tip__tap h4,
 .tip__tap h5,
 .tip__tap h6 {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .tip__tap h1 {
-    font-size: 50px;
+    font-size: 46px;
 }
 
 .tip__tap h2 {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 34px;
 }
 
 .tip__tap h3 {
@@ -287,7 +480,7 @@ footer .footer-list .list.header {
 
 .tip__tap p {
     margin: 10px 0 !important;
-    /* font-size: 18px !important; */
+    font-size: 16px !important;
 }
 
 .tip__tap .filament-tiptap-grid-builder {
@@ -310,6 +503,20 @@ footer .footer-list .list.header {
     text-align: justify;
 }
 
+.tip__tap .filament-tiptap-grid-builder__column ul {
+    list-style: disc;
+    margin: initial;
+}
+
+.tip__tap .filament-tiptap-grid-builder__column ul li {
+    list-style-position: outside;
+    margin-left: 25px;
+}
+
+.tip__tap .filament-tiptap-grid-builder__column ul li p {
+    text-align: initial;
+}
+
 .tip__tap table {
     width: 100%;
     table-layout: fixed;
@@ -324,7 +531,27 @@ footer .footer-list .list.header {
     border-bottom: solid 1px #ddd;
 }
 
+.tip__tap .filament-tiptap-grid-builder {
+    margin-bottom: 50px;
+}
+
+/* Markdown Editor */
+
+.mark__d h1,
+.mark__d h2,
+.mark__d h3,
+.mark__d h4,
+.mark__d h5,
+.mark__d h6 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px) {
+
+    .tip__tap .filament-tiptap-grid-builder {
+        margin-bottom: 30px;
+    }
 
     .tip__tap {
         margin-top: 15px;
@@ -425,4 +652,27 @@ footer .footer-list .list.header {
     width: 30px;
     margin-right: 20px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .awards-list .award-block {
+        width: 100%;
+    }
+
+    .clients-wrapper .clients .item {
+        width: 50%;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .clients-wrapper .clients .item:nth-child(2n+1) {
+        border-right: none;
+    }
+
+    /*
+    .clients-wrapper .clients .item:nth-child(-n + 2) {
+        border-top: none;
+    } */
+
+
 }

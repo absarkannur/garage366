@@ -430,6 +430,10 @@ h6 a:focus {
     min-height: 350px
 }
 
+.min-height-300px {
+    min-height: 300px
+}
+
 .w-250px {
     width: 250px
 }
@@ -657,8 +661,8 @@ h6 a:focus {
     transition: all 200ms ease-out;
     position: fixed;
     pointer-events: none;
-    left: 25px;
-    top: 25px;
+    left: 20px;
+    top: 20px;
     -webkit-transform: translate(calc(-50% + 5px), -50%);
     transform: translate(calc(-50% + 5px), -50%);
     z-index: 999999
